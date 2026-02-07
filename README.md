@@ -1,4 +1,5 @@
 # Software Dev AI Claude Toolkit
+<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/362fbec4-a3f8-463e-aa98-11e50b895815" />
 
 A production-ready Claude Code configuration for backend-heavy full-stack developers. Pre-configured rules, slash commands, agents, skills, hooks, and MCP servers — covering Java 17 + Spring Boot 3, Python 3.12 + FastAPI, JavaScript (Express.js + React), PostgreSQL, MongoDB, Redis, Kafka, Flink, Docker, Kubernetes, and AI/ML workflows.
 

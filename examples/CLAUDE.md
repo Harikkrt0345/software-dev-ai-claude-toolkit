@@ -2,7 +2,7 @@
 
 ## About Me
 - Backend-heavy full-stack developer
-- Primary stack: Java 17 + Spring Boot 3, Python 3.12 + FastAPI, JavaScript (Express.js + React)
+- Primary stack: Java 21 + Spring Boot 3.x, Python 3.12 + FastAPI, JavaScript (Express.js + React)
 - Databases: PostgreSQL, MongoDB, Redis
 - AI/ML: RAG, MCP servers, agents, ADK, vector databases
 - Infrastructure: Docker, Kubernetes, Kafka, Flink
@@ -21,7 +21,7 @@ Detailed guidelines are in `~/.claude/rules/`:
 | File | Covers |
 |------|--------|
 | coding-style.md | Immutability, naming, file organization |
-| java-springboot.md | Java 17, Spring Boot 3, Redis, Kafka |
+| java-springboot.md | Java 21, Spring Boot 3, Redis, Kafka |
 | python-backend-ai.md | FastAPI, RAG, MCP, ADK, vector DBs, ML |
 | javascript.md | Express.js, React |
 | databases.md | PostgreSQL, MongoDB, Redis |
@@ -38,4 +38,4 @@ Detailed guidelines are in `~/.claude/rules/`:
 - If I'm building something that has a well-known anti-pattern, warn me
 
 ## OS
-- Windows (use cross-platform commands when possible)
+- Linux (use cross-platform commands when possible)

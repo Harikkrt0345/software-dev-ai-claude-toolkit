@@ -4,15 +4,15 @@
 REST API for managing customer orders, inventory, and payment processing in an e-commerce platform.
 
 ## Tech Stack
-- **Language**: Java 17
+- **Language**: Java 21
 - **Framework**: Spring Boot 3.3
-- **Database**: PostgreSQL 16 (primary), Redis 7 (cache/sessions)
-- **Messaging**: Kafka (order events, inventory sync)
-- **Infra**: Docker, Kubernetes, GitHub Actions CI/CD
+- **Database**: Mysql 8 (primary), Redis 7 (cache/sessions)
+- **Messaging**: MQ
+- **Infra**: Docker, Kubernetes, Git, Jenkins
 
 ## How to Run
 ```bash
-# Start dependencies (PostgreSQL, Redis, Kafka)
+# Start dependencies (Mysql, Redis, Kafka)
 docker-compose up -d
 
 # Run locally

@@ -43,5 +43,5 @@ Walk through these areas step by step. Ask me clarifying questions at each step 
 ## Rules
 - Explain trade-offs for every decision (e.g., "CP vs AP", "SQL vs NoSQL for this use case").
 - Use real numbers when estimating (requests/sec, storage in GB, latency in ms).
-- Reference technologies I know: Spring Boot, FastAPI, PostgreSQL, MongoDB, Redis, Kafka, Flink, Docker, K8s.
+- Reference technologies I know: Spring Boot, FastAPI, Mysql, MongoDB, Redis, Kafka, Flink, Docker, K8s.
 - This is a learning exercise — teach me the reasoning, not just the answer.

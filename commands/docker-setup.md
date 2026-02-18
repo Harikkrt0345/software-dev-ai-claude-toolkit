@@ -17,7 +17,7 @@ Dockerize this project. Analyze the codebase first to detect the stack.
    - Health check
 3. **Generate docker-compose.yml** with:
    - App service
-   - Database services (PostgreSQL, MongoDB, Redis) as detected
+   - Database services (Mysql) as detected
    - Kafka + Zookeeper if messaging is used
    - Proper volume mounts for data persistence
    - Network configuration
@@ -25,7 +25,7 @@ Dockerize this project. Analyze the codebase first to detect the stack.
 4. **Generate .dockerignore** excluding .git, build artifacts, node_modules, __pycache__, .env
 
 ## Stack-Specific Base Images
-- Java 17: `eclipse-temurin:17-jdk-alpine` (build) + `eclipse-temurin:17-jre-alpine` (runtime)
+- Java 21: build + runtime
 - Python 3.12: `python:3.12-slim`
 - Node.js: `node:20-alpine`
 

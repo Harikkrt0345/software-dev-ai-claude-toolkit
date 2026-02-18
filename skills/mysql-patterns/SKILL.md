@@ -1,11 +1,12 @@
 ---
-name: postgres-patterns
-description: PostgreSQL database patterns for query optimization, schema design, indexing, and security. Based on Supabase best practices.
+name: mysql-patterns
+description: MySQL database patterns for query optimization, schema design, indexing, performance tuning, and security. Based on MySQL 8.x best practices.
 ---
 
-# PostgreSQL Patterns
+# MySQL Patterns
 
-Quick reference for PostgreSQL best practices. For detailed guidance, use the `database-reviewer` agent.
+Quick reference for MySQL best practices. For detailed guidance, use the `database-reviewer` agent.
+
 
 ## When to Activate
 

@@ -14,14 +14,6 @@
       "command": "npx",
       "args": ["-y", "@anthropic/sequential-thinking-mcp"],
       "description": "Step-by-step reasoning for complex problems — system design, debugging, architecture decisions"
-    },
-    "github": {
-      "command": "npx",
-      "args": ["-y", "@anthropic/github-mcp"],
-      "env": {
-        "GITHUB_TOKEN": "<YOUR_GITHUB_TOKEN>"
-      },
-      "description": "GitHub integration — PRs, issues, repos, code search (requires personal access token)"
     }
   }
 }

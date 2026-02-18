@@ -4,7 +4,7 @@
 [One-liner: what this project does]
 
 ## Tech Stack
-- **Language**: [Java 17 / Python 3.12 / JavaScript]
+- **Language**: [Java 21 / Python 3 / JavaScript]
 - **Framework**: [Spring Boot 3 / FastAPI / Express.js]
 - **Database**: [PostgreSQL / MongoDB / Redis]
 - **Messaging**: [Kafka / none]

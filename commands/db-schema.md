@@ -14,6 +14,33 @@ Design the database schema for: $ARGUMENTS
    - MySQL: tables, columns, types, constraints, indexes, foreign keys
 4. **Plan migrations** — Flyway (Java) or Alembic (Python) migration files needed.
 
+## Output Format
+
+### For MYSQL
+```sql
+CREATE TABLE table_name (
+    id          BIGINT AUTO_INCREMENT PRIMARY KEY,
+    ...
+    created_at  TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at  TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP 
+                    ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB;
+
+CREATE INDEX idx_table_column ON table_name(column);
+
+```
+
+### For MongoDB
+```json
+{
+  "_id": "ObjectId",
+  "field": "type",
+  "embedded": { ... },
+  "createdAt": "ISODate",
+  "updatedAt": "ISODate"
+}
+```
+With index definitions and schema validation rules.
 
 ## Guidelines
 - Every table/collection gets `created_at` and `updated_at`.

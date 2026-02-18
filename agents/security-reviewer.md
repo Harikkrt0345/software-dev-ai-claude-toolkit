@@ -40,7 +40,7 @@ You are a security specialist. Scan the codebase for vulnerabilities. Focus only
 - **Java/Spring**: CSRF protection enabled? @PreAuthorize on endpoints? BCrypt for passwords? No XXE in XML parsing?
 - **Python/FastAPI**: Depends() for auth? SQLAlchemy parameterized? No eval()/exec()? Secrets via pydantic-settings?
 - **JS/Express**: helmet() enabled? No eval()? Cookie httpOnly/secure flags? CORS whitelist (not *)?
-- **Database**: PostgreSQL RLS? MongoDB validation rules? Redis AUTH enabled? Connection over TLS?
+- **Database**: Connection over TLS?
 
 ## Output
 

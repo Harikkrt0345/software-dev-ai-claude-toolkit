@@ -1,6 +1,6 @@
-# Databases — PostgreSQL, MongoDB, Redis
+# Databases — MYSQL, MongoDB, Redis
 
-## PostgreSQL
+## MYSQL
 - Always use migrations (Flyway for Java, Alembic for Python). Never modify schema manually in production.
 - Use indexes on columns used in WHERE, JOIN, ORDER BY. Check with `EXPLAIN ANALYZE`.
 - Use `UUID` for public-facing IDs. Use `BIGSERIAL` for internal PKs.
@@ -30,6 +30,6 @@
 
 ## Cross-Database Guidelines
 - Each service owns its data. No shared databases between services.
-- Use the right DB for the job: PostgreSQL for relational/transactional, MongoDB for document/flexible schema, Redis for cache/sessions/real-time.
+- Use the right DB for the job: MYSQL for relational/transactional, Redis for cache/sessions/real-time.
 - Always handle connection failures gracefully with retries and circuit breakers.
 - Log slow queries. Set up alerts for query latency > threshold.

@@ -1,7 +1,7 @@
 # Software Dev AI Claude Toolkit
 <img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/362fbec4-a3f8-463e-aa98-11e50b895815" />
 
-A production-ready Claude Code configuration for backend-heavy full-stack developers. Pre-configured rules, slash commands, agents, skills, hooks, and MCP servers — covering Java 17 + Spring Boot 3, Python 3.12 + FastAPI, JavaScript (Express.js + React), PostgreSQL, MongoDB, Redis, Kafka, Flink, Docker, Kubernetes, and AI/ML workflows.
+A production-ready Claude Code configuration for backend-heavy full-stack developers. Pre-configured rules, slash commands, agents, skills, hooks, and MCP servers — covering Java 17 + Spring Boot 3, Python 3.12 + FastAPI, JavaScript (Express.js + React), MYSQL, MongoDB, Redis, Kafka, Flink, Docker, Kubernetes, and AI/ML workflows.
 
 Drop it in, run the installer, and Claude Code immediately understands your stack, enforces your standards, and works the way you work.
 
@@ -9,7 +9,7 @@ Drop it in, run the installer, and Claude Code immediately understands your stac
 
 - Backend developers working with Java/Spring Boot, Python/FastAPI, or Node.js/Express
 - Full-stack developers who also touch React frontends
-- Engineers working with PostgreSQL, MongoDB, Redis, Kafka, or Flink
+- Engineers working with MYSQL, MongoDB, Redis, Kafka, or Flink
 - Anyone building AI/ML pipelines (RAG, agents, MCP servers, vector databases)
 - Developers who want Claude Code to follow real engineering standards, not generic defaults
 
@@ -20,7 +20,7 @@ Drop it in, run the installer, and Claude Code immediately understands your stac
 | **Rules** | 9 | Coding standards Claude follows on every response |
 | **Slash Commands** | 8 | One-command workflows (`/plan`, `/tdd`, `/code-review`, etc.) |
 | **Agents** | 5 | Specialized AI personas for planning, review, security, architecture, TDD |
-| **Skills** | 13 | Deep domain knowledge packs (Spring Boot, Python, React, PostgreSQL, etc.) |
+| **Skills** | 13 | Deep domain knowledge packs (Spring Boot, Python, React, MYSQL, etc.) |
 | **Hooks** | 4 | Automated guardrails that run before/after tool use |
 | **MCP Servers** | 4 | External tool integrations (docs lookup, memory, reasoning, GitHub) |
 | **Examples** | 3 | Ready-to-use CLAUDE.md templates for your projects |
@@ -57,7 +57,7 @@ The difference is not magic — it's context. This toolkit gives Claude Code the
 
 ### Mac / Linux
 ```bash
-git clone https://github.com/AshfaqSy/software-dev-ai-claude-toolkit.git
+clone the repo
 cd software-dev-ai-claude-toolkit
 chmod +x install.sh
 ./install.sh
@@ -65,7 +65,7 @@ chmod +x install.sh
 
 ### Windows (PowerShell)
 ```powershell
-git clone https://github.com/AshfaqSy/software-dev-ai-claude-toolkit.git
+clone the repo
 cd software-dev-ai-claude-toolkit
 .\install.ps1
 ```
@@ -103,7 +103,7 @@ Rules are always-on instructions that Claude Code follows in every response. The
 | `java-springboot.md` | Java 17 features, Spring Boot 3 standards, project structure, REST conventions, Redis, Kafka |
 | `python-backend-ai.md` | FastAPI, Pydantic, SQLAlchemy 2.0, RAG pipelines, MCP/ADK agents, ML best practices |
 | `javascript.md` | Express.js API patterns, React conventions, hooks, project structure |
-| `databases.md` | PostgreSQL (migrations, indexes, UUIDs), MongoDB (embedding vs referencing), Redis (data structures, TTL, key naming) |
+| `databases.md` | MYSQL (migrations, indexes, UUIDs), MongoDB (embedding vs referencing), Redis (data structures, TTL, key naming) |
 | `infra.md` | Docker (multi-stage builds), Kubernetes (probes, HPA, PDB), Kafka (topics, consumers, idempotency), Flink (state, checkpoints) |
 | `git-workflow.md` | Conventional commits, branch strategy, PR process, what not to commit |
 | `testing.md` | TDD workflow, 80% coverage target, JUnit/pytest/Jest patterns, test naming |
@@ -205,7 +205,7 @@ Skills are deep domain knowledge packs that activate contextually. When Claude d
 | `springboot-tdd` | Java/Spring | JUnit 5, Mockito, MockMvc, Testcontainers, JaCoCo coverage patterns |
 | `java-coding-standards` | Java | Java 17 idioms, records, sealed classes, pattern matching, Optional usage |
 | `jpa-patterns` | Java/DB | Entity design, relationships, query optimization, transactions, auditing, pagination |
-| `postgres-patterns` | Database | Query optimization, schema design, indexing strategies, security best practices |
+| `Mysql-patterns` | Database | Query optimization, schema design, indexing strategies, security best practices |
 | `python-patterns` | Python | Pythonic idioms, PEP 8, type hints, dataclasses, best practices |
 | `python-testing` | Python | pytest, TDD methodology, fixtures, mocking, parametrization, coverage |
 | `frontend-patterns` | React/JS | React patterns, state management, performance optimization, UI best practices |

@@ -9,40 +9,15 @@ Design the database schema for: $ARGUMENTS
 ## Process
 
 1. **Identify entities** — what are the main objects and their relationships?
-2. **Choose database** — PostgreSQL (relational, transactional) vs MongoDB (document, flexible) for each entity. Justify the choice.
+2. **Choose database** — MySQL (relational, transactional) vs MongoDB (document, flexible) for each entity. Justify the choice.
 3. **Design schema**:
-   - PostgreSQL: tables, columns, types, constraints, indexes, foreign keys
-   - MongoDB: collection structure, document shape, embedded vs referenced, indexes
+   - MySQL: tables, columns, types, constraints, indexes, foreign keys
 4. **Plan migrations** — Flyway (Java) or Alembic (Python) migration files needed.
 
-## Output Format
-
-### For PostgreSQL
-```sql
-CREATE TABLE table_name (
-    id          BIGSERIAL PRIMARY KEY,
-    ...
-    created_at  TIMESTAMPTZ NOT NULL DEFAULT NOW(),
-    updated_at  TIMESTAMPTZ NOT NULL DEFAULT NOW()
-);
-
-CREATE INDEX idx_table_column ON table_name(column);
-```
-
-### For MongoDB
-```json
-{
-  "_id": "ObjectId",
-  "field": "type",
-  "embedded": { ... },
-  "createdAt": "ISODate",
-  "updatedAt": "ISODate"
-}
-```
-With index definitions and schema validation rules.
 
 ## Guidelines
 - Every table/collection gets `created_at` and `updated_at`.
+- MySQL: use TIMESTAMP (or DATETIME with UTC enforcement), BINARY(16) (or CHAR(36)) for UUID public IDs, BIGINT AUTO_INCREMENT for internal primary keys.
 - PostgreSQL: use `TIMESTAMPTZ`, `UUID` for public IDs, `BIGSERIAL` for internal PKs.
 - MongoDB: embed data that's read together, reference data that's updated independently.
 - Add indexes for every query pattern. Explain each index choice.
